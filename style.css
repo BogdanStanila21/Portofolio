@@ -1,0 +1,233 @@
+
+/*---------------------------------------------------------------------------*/
+/*General*/
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: #3c3c3c;
+    --second-color: #fff;
+    --third-color: #FF4D4D;
+    --forth-color: #2CDB5E;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Nav CSS*/
+.menu{
+    background-color: var(--main-color);
+    display: flex;
+    line-height: 15px;
+    padding-bottom: 400px;
+}
+
+.alignLeft{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    -webkit-box-shadow: 0px 5px 7px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 7px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 7px -7px rgba(0,0,0,0.75);
+}
+
+.alignRight{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    -webkit-box-shadow: 0px 5px 7px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 7px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 7px -7px rgba(0,0,0,0.75);
+}
+
+
+.logo img{
+    margin-left: 20px;
+    height: 40px;
+    width: 55px;
+}
+
+.tab{
+    cursor: pointer;
+    display: inline-block;
+    width: 110px;
+    color: var(--second-color);
+    text-align: center;
+    line-height: 40px;
+    font-weight: bolder;
+}
+
+/*---------------------------------------------------------------------------*/
+/*About CSS*/
+
+.about{
+    background-image: url("Imagenes/programacion2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -340px;
+    border: 1px solid var(--main-color);
+    
+}
+
+.aboutMain div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.profileImg{
+    margin-top: 40px;
+    height: 500px;
+}
+.profileImg img{
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 100px;
+}
+.title{
+    color: var(--second-color);
+}
+
+.faIcons{
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+    color: var(--second-color);
+}
+
+.button1{
+    background-color: var(--third-color);
+    color: var(--second-color);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    width: fit-content;
+}
+
+.aboutInfo{
+    background-color: var(--second-color);
+    height: 100px;
+    margin-top: 15px;
+    
+}
+
+/*---------------------------------------------------------------------------*/
+/* Technologies CSS*/
+
+.technologies{
+    padding-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+.technologies h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    color: var(--main-color);
+}
+.techFirstRow {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+}
+.techFirstRow div{
+    border-top: 2px solid var(--forth-color);
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 15px -3px var(--main-color);
+    -moz-box-shadow: 0px 0px 15px -3px var(--main-color);
+    box-shadow: 0px 0px 15px -3px var(--main-color);
+}
+
+.techSecondRow{
+    display: flex;
+    text-align: center;
+}
+.techSecondRow div{
+    border-top: 2px solid var(--forth-color);
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 15px -3px var(--main-color);
+    -moz-box-shadow: 0px 0px 15px -3px var(--main-color);
+    box-shadow: 0px 0px 15px -3px var(--main-color);
+}
+
+footer{
+    height: 200px;
+    background-color: burlywood;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Portfolio CSS*/
+
+.portfolio{
+    padding-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+.portfolio div{
+    display: flex;
+    padding-top: 20px;
+}
+
+.projectImg{
+    flex-direction: column;
+
+}
+
+.projectImg h4{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+.projectComents{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.projectComents h4{
+    padding-top: 35px;
+}
+
+
+
+
+/*---------------------------------------------------------------------------*/
+/*Hover*/
+.tab:hover{
+    background-color: var(--third-color);
+}
+
+.button1:hover{
+    color: var(--main-color);
+}
+
+.techFirstRow div:hover{
+    -webkit-box-shadow: 0px 0px 15px -3px var(--third-color);
+    -moz-box-shadow: 0px 0px 15px -3px var(--third-color);
+    box-shadow: 0px 0px 15px -3px var(--third-color);
+}
+.techSecondRow div:hover{
+    -webkit-box-shadow: 0px 0px 15px -3px var(--third-color);
+    -moz-box-shadow: 0px 0px 15px -3px var(--third-color);
+    box-shadow: 0px 0px 15px -3px var(--third-color);
+}
